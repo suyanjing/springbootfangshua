@@ -1,0 +1,23 @@
+server:
+  port: 8033
+
+spring:
+  application:
+    name: bootdemo
+  redis:
+    database: 0 # Redis数据库索引(默认为0)
+    host: 172.28.50.78
+    port: 6379
+    password:
+    timeout: 10000
+    jedis:
+      pool:
+        max-active: 2000
+        max-wait: 3000
+        max-idle: 2000
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 10000
+
+
+
