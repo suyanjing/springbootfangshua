@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping("/fangshua")
-    @AccessLimit(maxCount = 1,seconds = 10,needLogin = false)
+    @AccessLimit(maxCount = 1,seconds = 1000,needLogin = false)
     public ResponseResult fangShuaTest(){
         return new ResponseResult("0", "防刷测试");
     }
